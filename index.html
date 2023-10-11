@@ -25,7 +25,7 @@ body{
     max-width: 1380px;
     min-width: 200px;
     height: 380px;
-    margin: 0 auto;
+
     
     position: relative;
 
@@ -130,21 +130,19 @@ body{
     text-align: right;
 }
 
-.game-over{
+.game-over {
     display: none;
-
     position: absolute;
-    width: 100%;
-    background:#FFF;
-
-
+    width: 70%;
+    background: #FFF;
     text-align: center;
     color: #7e928b;
-    font-size: 30px;
+    font-size: 100%;
     font-family: Verdana;
     font-weight: 700;
-
     z-index: 6;
+    left: 15%;
+    top: 28%;
 }
 
 .btn-reiniciar{
@@ -170,10 +168,10 @@ body{
 @media screen and (max-width: 500px){
 .contenedor {
 
-    min-width: 130%;
+    width: 100vw;
     height: 40%;
     margin-top: 20%;
-
+    margin: 0 0 ;
 }
 
 .suelo {
@@ -183,12 +181,13 @@ body{
 
 }
 .game-over {
+    height: 30PX;
     text-align: center;
     outline: solid red 3px;
     color: #000000;
-    font-size: 90%;
+    font-size: 50%;
     left: 15%;
-    top: 43%;
+    top: 32%;
 }
     
 }
@@ -196,18 +195,22 @@ body{
 @media screen and (max-width: 360px){
     .contenedor {
 
-    min-width: 130%;
+    width: 100%;
     height: 30%;
-    margin-top: 20%;
+    margin-top: -20%;
 
 }
 .game-over {
- 
-  
-    left: 15%;
-    top: 41%;
+    top: 20%;
 }
 
+}
+
+.btn-reiniciar {
+    width: 80px;
+    height: 20px;
+    margin: 12px 0;
+    font-size: 10px;
 }
 
 
